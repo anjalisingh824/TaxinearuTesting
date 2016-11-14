@@ -69,8 +69,8 @@ public class ExcelUtils {
 		XSSFWorkbook wb = new XSSFWorkbook(fis);
 		XSSFSheet sheet = wb.getSheetAt(0);
 		sheet.getRow(rowcount).createCell(columncount).setCellValue(value);
-                FileOutputStream fout=new FileOutputStream(src);
-                wb.write(fout);
+        FileOutputStream fout=new FileOutputStream(src);
+        wb.write(fout);
        
 	}
 
