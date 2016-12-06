@@ -104,7 +104,7 @@ public class ChangeAlternateEmail {
 		Thread.sleep(2000);
 
 		// checking validation value 1
-		Function.changeAlternateEmail(driver, 3, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 3, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 1 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -112,7 +112,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 2
-		Function.changeAlternateEmail(driver, 4, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 4, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 2 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -120,7 +120,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 3
-		Function.changeAlternateEmail(driver, 5, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 5, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 3 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -128,7 +128,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 4
-		Function.changeAlternateEmail(driver, 6, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 6, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 4 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -136,7 +136,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 5
-		Function.changeAlternateEmail(driver, 7, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 7, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 5 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -144,7 +144,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 6
-		Function.changeAlternateEmail(driver, 8, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 8, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 6 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -152,7 +152,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 7
-		Function.changeAlternateEmail(driver, 9, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 9, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 7 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -160,7 +160,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 8
-		Function.changeAlternateEmail(driver, 10, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 10, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 8 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -168,7 +168,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 10
-		Function.changeAlternateEmail(driver, 12, 1, 2, Constant.MISMATCH_ERROR);
+		Function.changeAlternateEmail(driver, 12, 1, 2, Constant.MISMATCH_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 10 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -176,7 +176,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 11
-		Function.changeAlternateEmail(driver, 13, 1, 2, Constant.ALTERNATE_EMAIL_NOTSAMERROR);
+     	Function.changeAlternateEmail(driver, 13, 1, 2, Constant.ALTERNATE_EMAIL_NOTSAMERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 11 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -184,7 +184,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// finally entering the confirm values
-		Function.changeAlternateEmail(driver, 14, 1, 2, Constant.SCS_MSG_ALTERNATE);
+		Function.changeAlternateEmail(driver, 14, 1, 2, Constant.SCS_MSG_ALTERNATE,Constant.SHEET_NAME3);
 		Thread.sleep(5000);
 		Log.info("CONFIRM VALUES PASSED SUCCESSFULLY");
 
@@ -223,6 +223,11 @@ public class ChangeAlternateEmail {
 				.click();
 		Thread.sleep(5000);
 
+	
+		
+		
+		
+		
 		// click on the security question checkbox
 		driver.findElement(By
 				.xpath("//html/body/div[3]/div/div/div/div/div[2]/div[1]/div/div[3]/div/div/div/div[1]/form/p[3]/label"))
@@ -378,18 +383,21 @@ public class ChangeAlternateEmail {
 
 		// checking validation value 11
 		Function.changeAlternateBySecurity(driver, 27, 1, 2, Constant.ALTERNATE_EMAIL_NOTSAME_BYSECURITY);
+		Thread.sleep(2000);
 		Log.info("VALIDATION VALUE 11 EXECUTED SUCCESSFULLY");
-
+        
+		
 		// clear the fields
 		driver.findElement(By.id("txtEmailId")).clear();
 		driver.findElement(By.id("txtConfirmEmailId")).clear();
 
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 
 		// entering confirm values
 		Function.changeAlternateBySecurity(driver, 28, 1, 2, Constant.SCS_MSG_BY_SECURITY);
-		Log.info("CONFIRM VALUES PASSED SUCCESSFULLY");
 		Thread.sleep(5000);
+		Log.info("CONFIRM VALUES PASSED SUCCESSFULLY");
+	
 
 		// changing alternate email by sending mail to the alternate email
 
@@ -446,7 +454,7 @@ public class ChangeAlternateEmail {
 		Thread.sleep(2000);
 
 		// checking validation value 1
-		Function.changeAlternateEmail(driver, 30, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 30, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 1 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -454,7 +462,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 2
-		Function.changeAlternateEmail(driver, 31, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 31, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 2 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -462,7 +470,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 3
-		Function.changeAlternateEmail(driver, 32, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 32, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 3 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -470,7 +478,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 4
-		Function.changeAlternateEmail(driver, 33, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 33, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 4 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -478,7 +486,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 5
-		Function.changeAlternateEmail(driver, 34, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 34, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 5 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -486,7 +494,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 6
-		Function.changeAlternateEmail(driver, 35, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 35, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 6 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -494,7 +502,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 7
-		Function.changeAlternateEmail(driver, 36, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 36, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 7 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -502,7 +510,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 8
-		Function.changeAlternateEmail(driver, 37, 1, 2, Constant.VALID_EMAIL_ERROR);
+		Function.changeAlternateEmail(driver, 37, 1, 2, Constant.VALID_EMAIL_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 8 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -510,7 +518,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 10
-		Function.changeAlternateEmail(driver, 39, 1, 2, Constant.MISMATCH_ERROR);
+		Function.changeAlternateEmail(driver, 39, 1, 2, Constant.MISMATCH_ERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 10 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -518,7 +526,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// checking validation value 11
-		Function.changeAlternateEmail(driver, 40, 1, 2, Constant.ALTERNATE_EMAIL_NOTSAMERROR);
+		Function.changeAlternateEmail(driver, 40, 1, 2, Constant.ALTERNATE_EMAIL_NOTSAMERROR,Constant.SHEET_NAME3);
 		Log.info("VALIDATION VALUE 11 SUCCESSFULLY EXECUTED");
 
 		Thread.sleep(2000);
@@ -526,7 +534,7 @@ public class ChangeAlternateEmail {
 		driver.findElement(By.id("confAltEmail")).clear();
 
 		// finally entering the confirm values
-		Function.changeAlternateEmail(driver, 41, 1, 2, Constant.SCS_MSG_ALTERNATE);
+		Function.changeAlternateEmail(driver, 41, 1, 2, Constant.SCS_MSG_ALTERNATE,Constant.SHEET_NAME3);
 		Thread.sleep(5000);
 		Log.info("CONFIRM VALUES PASSED SUCCESSFULLY");
 
